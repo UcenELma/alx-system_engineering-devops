@@ -1,2 +1,4 @@
 #!/bin/bash
-chmod u+x,g+x,o+x hello
+echo "ugo+x" > perms
+chmod `cat perms` hello
+rm perms
