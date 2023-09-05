@@ -1,2 +1,2 @@
 #!/bin/bash
-WATER="ewwatratewa"; STIR="ti.itirtrtr"; BESTCHOL=""; for ((i=0; i<${#WATER}; i++)); do char1="${WATER:$i:1}"; char2="${STIR:$i:1}"; val1=$((36#${char1})); val2=$((36#${char2})); sum=$((val1 + val2)); if [ "$sum" -lt 10 ]; then BESTCHOL="${BESTCHOL}${sum}"; else BESTCHOL="${BESTCHOL}$(printf '%x' "$sum")"; fi; done; echo "$BESTCHOL"
+echo "ibase=36; obase=36; $(echo "ewwatratewa" | tr 'a-z' '0-9' | tr -d '.') + $(echo "ti.itirtrtr" | tr 'a-z' '0-9' | tr -d '.')" | bc | tr '0-9a-z' 'a-z0-9'
