@@ -1,2 +1,2 @@
 #!/bin/bash
-cat "An Acrostic" | while read -r line; do echo -n "${line:0:1}"; done; echo
+cut -c 1 | paste  -s -d ''
