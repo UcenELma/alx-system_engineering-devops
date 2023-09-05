@@ -1,2 +1,2 @@
 #!/bin/bash
-for letter in {a..z}{n..z}{a..m}{A..Z}{N..Z}; do echo -n "$letter"; done; echo
+tr 'A Za z' 'N-ZA-Mn-za-m'
