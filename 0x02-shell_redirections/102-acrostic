@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -c 1 | paste -a -d ''
+cat acrostic.txt | ./script.sh
