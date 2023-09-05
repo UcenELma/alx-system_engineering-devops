@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "ibase=36; obase=36; $(echo "ewwatratewa" | tr 'a-z' '0-9' | tr -d '.') + $(echo "ti.itirtrtr" | tr 'a-z' '0-9' | tr -d '.')" | bc | tr '0-9a-z' 'a-z0-9'
+printf "%o\n" $(( (5#$(echo $WATER | tr '[water]' '[01234]')) + (5#$(echo $STIR | tr '[stir.]' '[01234]')) )) | tr '[01234567]' '[beatchol]'
